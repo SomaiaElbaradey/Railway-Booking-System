@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<style type="text/css">
+	body
+	{
+		background: url("dark-clouds-daylight-grass-552501 (1).jpg");
+		background-size: cover;
+		font-family:sans-serif;
+		margin: 0;
+		padding: 0;
+		color: white;
+		
+
+	}
+	.box
+		{
+
+			position: absolute;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			width: 500px;
+			height: 1000px;
+			padding: 40px;
+			background: black;
+			opacity: 0.8;
+			box-sizing: border-box;
+			box-shadow: 0 15px 25px rgb(0,0,0,.5);
+			border-radius: 10px;
+		}
+		.box h2
+		{
+
+			margin: 0 0 30px;
+			padding: 0;
+			font-size: 25;
+			text-align: center;
+
+		}
+		.box a
+		{
+			background: transparent;
+			border:none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-left: 320px;
+			
+
+			
+
+		}
+
+		.box .inputbox
+		{
+			position: relative;
+			height: 110px;
+
+
+		}
+
+		.box .inputbox input
+		{
+			width: 100%;
+			height: 10px;
+			padding: 10px 0;
+			font-size: 16px;
+			margin-bottom: 30px;
+			margin-top:50px;
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			background: transparent;
+			color: #fff;
+
+
+
+
+		}
+		.box .inputbox label
+		{
+			position: absolute;
+			height: 5px;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 25px;
+			pointer-events: none;
+			transition: .5s;
+
+		}
+		.box .inputbox  input:focus ~ label,
+		.box .inputbox  input:valid ~ label
+		
+		{
+			top: -18px;
+			left: 0;
+			color: #03a9f4;
+			font-size: 20px;
+
+
+
+		}
+		.box button
+		{
+			background: transparent;
+			border:none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+
+		}
+		.box input[type=radio] 
+		{
+	    border: 0px;
+	    width: 100%;
+	    height: 20px;
+		}
+		.box select
+		{
+
+			background:#69c;
+			color: #fff;
+			font-size: 25px;
+			padding: 10px;
+			width: 250px;
+			margin-top: 40px;
+			height: 50px
+
+
+		}
+
+	</style>
+	
+
+	
+</head>
+<body>
+
+	<div class="box">
+		<h2>Sign Up </h2>
+		
+		<form autocomplete="off" action="passenger.html" onsubmit="Signup()">
+			<div class="inputbox">
+				
+				<input type="text" id="userid" name="username" required="" value="">
+				<label>Username</label>
+				
+
+			</div>
+			<div class="inputbox">
+				
+				<input type="Password" id="passid" name="password" required="">
+				<label>Password</label>
+
+			</div>
+			<div class="inputbox">
+				
+				<select id="genderid">
+					 
+					  <option value="female">Famle</option>
+					  <option value="male">Male</option>
+				</select>
+				<label>Gender</label>
+
+			</div>
+			
+			
+
+			<div class="inputbox">
+				
+				<input class = "gen" type="number" id="ageid" name="age" >
+				<label>Age</label>
+
+			</div>
+			<div class="inputbox">
+				
+				<input type="email" id="emailid" name="email" required="">
+				<label>E-mail</label>
+
+			</div>
+			
+			
+			<div class="inputbox">
+				
+				<input type="text" id="cardid" name="card"  required="">
+				<label>Card</label>
+
+
+			
+
+
+			<button type="submit" id="click" >Sign Up</button>
+			
+
+
+
+
+		</form>
+		
+		
+	</div>
+	<div id="getResult2"></div>
+
+	
+<script type="text/javascript">
+function form_passenger() {
+		window.open("passenger.html");
+	}	
+
+</script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	 
+
+<script src="../signup.js"> </script>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Table</title>
+	<style type="text/css">
+	body
+	{
+		background: url("dark-clouds-daylight-grass-552501 (1).jpg");
+		background-size: cover;
+		font-family:sans-serif;
+		margin: 0;
+		padding: 0;
+		color: white;
+		
+
+	}
+
+
+
+	table,th,td
+	{
+		width: 70%;
+		margin: auto;
+		border: 1px solid white;
+		border-collapse: collapse;
+		text-align: center;
+		font-size: 25px;
+		table-layout: fixed;
+		background: black;
+		opacity: 0.8;
+		color: white;
+		margin-top: 100px;
+
+
+
+	}
+	th,td
+	{
+
+		padding: 20px;
+		opacity: 0.8;
+
+	}
+	th{
+		background: #69c
+	}
+	.box button
+		{
+			background: transparent;
+
+			
+			border:none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+			transform: translate(140%,220%);
+			margin-bottom: 50px;
+		}
+
+		
+
+
+
+
+
+	</style>
+	</head>
+
+<body>
+  <div class="box">
+    
+	    <div class="bott">
+	      <br>
+	      <button class="btn btn-primary" style="height:70px;width:200px; font-size:22px" onclick="performGetRequest1()">Train schedules</button>
+	  	</div>
+
+	      <table  id="getResult1" >
+	        <tr>
+	          <th>Train_ID</th>
+	          <th>Alex</th>
+	          <th>Tanta</th>
+			  <th>Benha</th>
+			  <th>Cairo</th>
+
+	      </table>
+    </div>
+  
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script type="text/javascript" src="../table.js"></script>
+
+
+</body>
+
+</html>
